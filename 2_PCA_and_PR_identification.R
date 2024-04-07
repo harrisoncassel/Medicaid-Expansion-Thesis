@@ -1,7 +1,7 @@
 ##### PCA computation & # of PCs selection #####
 # PCA code based on pp. 401-404 of Introduction to Statistical Learning in R (1st ed.).
 # Freely available from: https://www.statlearning.com/
-pca <- prcomp(PEER.ID.FINAL, scale=TRUE)
+pca <- prcomp(PEER.ID.FINAL, scale=TRUE) # center=TRUE by default
 
 # Plotting -- choosing 4 PCs (82% of variance)
 pca.var <- pca$sdev^2
